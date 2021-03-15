@@ -1,0 +1,39 @@
+.container {
+    padding: 1px;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 255));
+}
+
+._container {
+    padding: 10px;
+}
+
+.BTN {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.BTN.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.footer button {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.footer button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.collection-item {
+    cursor: move;
+}
+
+.collection-item.dragging {
+    opacity: 0.5;
+}
