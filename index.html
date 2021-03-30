@@ -14,17 +14,22 @@
     <title>materialize_Sandbox</title>
 </head>
 
-<body onload="showTask()">
+<body>
     <nav>
         <div class="nav-wrapper black">
             <a href="#" class="brand-logo center">Kanban</a>
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container one">
         <h3 class="center-align">create a board </h3>
         <div class="center align">
-            <button class="btn waves-effect waves-light black "> <i class="material-icons left">add</i>New
+            <div id="inputValue" class="input-field col s6 m4 l12">
+
+                <input id="input_text" type="text" data-length="10">
+                <label for="input_text " class="black-text"> Add New Board</label>
+            </div>
+            <button class="btn waves-effect waves-light black BTN1"> <i class="material-icons left">add</i>New
                 Board</button>
         </div>
     </div>
@@ -33,122 +38,100 @@
 
     <!--    <div class="container">  -->
 
-    <div class="_container">
+    <div class="_container " id="container">
         <div class="row">
             <div class="center-align">
-                <div class="col s12 black white-text ">
+                <div id="BoardName" class="col s12 black white-text ">
                     <p>Kanban</p>
                 </div>
 
+                <div class=" container col  l12 s12 " id="TodoInput">
 
-                <div class="col s12 m4 l3 #ffeb3b yellow" id="todo">
-                    <div class="center-align">
-                        <p>TO-DO </p>
-                        <div class="BTN"> <a class="left btn-floating waves-effect waves-light red "><i
+                    <div id="inputValue" class="input-field col s6 m4 l6 ">
+                        <input id="input_text 1" name="todo" type="text" data-length="10">
+                        <label for="input_text"> New TO-DO</label>
+                    </div>
+                    <div class="BTN " id="todoBtn"> <a class=" left btn-floating waves-effect waves-light red "><i
                                     class="material-icons">add</i></a> </div>
 
-                        <div id="inputValue" class="input-field col s6 m4 l12">
+                </div>
 
-                            <input id="input_text" type="text" data-length="10">
-                            <label for="input_text"> New TO-DO</label>
-                        </div>
-                        <ul id="ul-todo" class="collection">
+                <div class="col s12 m4 l3 N/A transparent" id="todo">
+                    <div class="center-align">
+                        <h4>todo
+                        </h4>
+                        <ul class="collection" id="To-do">
 
                         </ul>
-                        <div class="footer">
+                        <!-- <div class="footer">
                             <span>You have <span class="pendingTasks"></span> pending tasks</span>
                             <br>
                             <br>
-                            <button id="BTNfooter" class="btn waves-effect waves-light black "> <i class="material-icons left">delete</i>Clear ALL</button>
-                        </div>
+                            <button id="BTNfooter" class="btn waves-effect waves-light black "> <i
+                                    class="material-icons left">delete</i>Clear ALL</button>
+                        </div> -->
                     </div>
                 </div>
-                <div class="col s12 m4 l2 purple" id="Analysis">
+                <div class="col s12 m4 l2 N/A transparent" id="Analysis">
                     <div class="center-align">
-                        <p>Analysis</p>
+                        <h4>Analysis
+                        </h4>
                         <div class="row">
                             <div class="col l6 s12 ">
                                 <p>Doing</p>
-                                <ul class="collection">
-                                    <li class="collection-item" draggable="true">Item 1</li>
-                                    <li class="collection-item" draggable="true">Item 2</li>
-                                    <li class="collection-item" draggable="true">Item 3</li>
-                                    <li class="collection-item" draggable="true">Item 4</li>
+                                <ul class="collection" id="doing-Analysis">
                                 </ul>
                             </div>
                             <div class="col l6 s12 ">
                                 <p>Done</p>
-                                <ul class="collection ">
-                                    <li class="collection-item" draggable="true">Item 1</li>
-                                    <li class="collection-item" draggable="true">Item 2</li>
-                                    <li class="collection-item" draggable="true">Item 3</li>
-                                    <li class="collection-item" draggable="true">Item 4</li>
+                                <ul class="collection " id="done-Analysis">
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4 l2 #1e88e5 blue darken-1">
+            <div class="col s12 m4 l2  N/A transparent" id="Development">
                 <div class="center-align">
-                    <p>Development
-                    </p>
+                    <h4>Development
+                    </h4>
                     <div class="row">
                         <div class="col l6 s12 ">
                             <p>Doing</p>
-                            <ul class="collection ">
-                                <li class="collection-item" draggable="true">Item 1</li>
-                                <li class="collection-item" draggable="true">Item 2</li>
-                                <li class="collection-item" draggable="true">Item 3</li>
-                                <li class="collection-item" draggable="true">Item 4</li>
+                            <ul class="collection " id="doing_development">
                             </ul>
                         </div>
                         <div class="col l6 s12 ">
                             <p>Done</p>
-                            <ul class="collection ">
-                                <li class="collection-item" draggable="true">Item 1</li>
-                                <li class="collection-item" draggable="true">Item 2</li>
-                                <li class="collection-item" draggable="true">Item 3</li>
-                                <li class="collection-item" draggable="true">Item 4</li>
+                            <ul class="collection " id="done_development">
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4 l2 orange">
+            <div class="col s12 m4 l2 N/A transparent " id="Testing">
                 <div class="center-align">
-                    <p>Testing
-                    </p>
+                    <h4>Testing
+                    </h4>
                     <div class="row">
                         <div class="col l6 s12 ">
                             <p>Doing</p>
-                            <ul class="collection ">
-                                <li class="collection-item" draggable="true">Item 1</li>
-                                <li class="collection-item" draggable="true">Item 2</li>
-                                <li class="collection-item" draggable="true">Item 3</li>
-                                <li class="collection-item" draggable="true">Item 4</li>
+                            <ul class="collection " id="doing_testing">
                             </ul>
                         </div>
                         <div class="col l6 s12 ">
                             <p>Done</p>
-                            <ul class="collection ">
-                                <li class="collection-item" draggable="true">Item 1</li>
-                                <li class="collection-item" draggable="true">Item 2</li>
-                                <li class="collection-item" draggable="true">Item 3</li>
-                                <li class="collection-item" draggable="true">Item 4</li>
+                            <ul class="collection " id="done_testing">
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4 l3 brown">
+            <div class="col s12 m4 l3 N/A transparent " id="Done">
                 <div class="center-align">
-                    <p>Done</p>
-                    <ul class="collection ">
-                        <li class="collection-item" draggable="true">Item 1</li>
-                        <li class="collection-item" draggable="true">Item 2</li>
-                        <li class="collection-item" draggable="true">Item 3</li>
-                        <li class="collection-item" draggable="true">Item 4</li>
+                    <h4>Done
+                    </h4>
+                    <ul class="collection " id="done">
                     </ul>
                 </div>
             </div>
@@ -158,9 +141,7 @@
         </div>
     </div>
 
-    </div>
 
-    </div>
     <!--  </div>
      container end-->
 

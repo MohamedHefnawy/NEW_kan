@@ -1,0 +1,23 @@
+{
+    "name": "NEW_kan",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "json-server": "json-server --watch DataBase.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MohamedHefnawy/NEW_kan.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MohamedHefnawy/NEW_kan/issues"
+    },
+    "homepage": "https://github.com/MohamedHefnawy/NEW_kan#readme",
+    "dependencies": {
+        "json-server": "^0.16.3"
+    }
+}
