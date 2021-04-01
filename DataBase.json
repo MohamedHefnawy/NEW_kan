@@ -1,8 +1,14 @@
 {
   "tasks": [
     {
+      "id": 1,
+      "taskName": "Task one",
+      "cloumnLocation": "Analysis",
+      "DoingOrDone": "Doing"
+    },
+    {
       "id": 2,
-      "taskName": "analysis task 1",
+      "taskName": "analysis task 1 update",
       "cloumnLocation": "Analysis",
       "DoingOrDone": "Doing"
     },
@@ -10,7 +16,7 @@
       "id": 3,
       "taskName": "analysis task 2",
       "cloumnLocation": "Analysis",
-      "DoingOrDone": "done"
+      "DoingOrDone": "Done"
     },
     {
       "id": 4,
@@ -22,60 +28,31 @@
       "id": 5,
       "taskName": "Development task 2",
       "cloumnLocation": "Development",
-      "DoingOrDone": "done"
+      "DoingOrDone": "Done"
+    },
+    {
+      "id": 6,
+      "taskName": "tesing task 2",
+      "cloumnLocation": "Testing",
+      "DoingOrDone": "Done"
     },
     {
       "id": 7,
-      "taskName": "tesing task 2",
-      "cloumnLocation": "Testing",
-      "DoingOrDone": "done"
-    },
-    {
-      "id": 8,
       "taskName": "Done 1",
       "cloumnLocation": "Done",
       "DoingOrDone": "none"
     },
     {
-      "taskName": "ma7sseb",
-      "DoingOrDone": "done",
-      "cloumnLocation": "Analysis",
+      "id": 8,
+      "taskName": "sasassses",
+      "cloumnLocation": "To-do",
+      "DoingOrDone": 0
+    },
+    {
+      "taskName": "final",
+      "cloumnLocation": "To-do",
+      "DoingOrDone": 0,
       "id": 9
-    },
-    {
-      "taskName": "cscscs",
-      "DoingOrDone": 0,
-      "id": 11
-    },
-    {
-      "taskName": "sasas",
-      "cloumnLocation": "todo",
-      "DoingOrDone": 0,
-      "id": 12
-    },
-    {
-      "taskName": "ssssaaaaa",
-      "cloumnLocation": "To-do",
-      "DoingOrDone": 0,
-      "id": 19
-    },
-    {
-      "taskName": "cscscsc",
-      "cloumnLocation": "To-do",
-      "DoingOrDone": 0,
-      "id": 23
-    },
-    {
-      "taskName": "xsx",
-      "cloumnLocation": "To-do",
-      "DoingOrDone": 0,
-      "id": 24
-    },
-    {
-      "taskName": "hefnawy",
-      "cloumnLocation": "To-do",
-      "DoingOrDone": 0,
-      "id": 25
     }
   ]
 }

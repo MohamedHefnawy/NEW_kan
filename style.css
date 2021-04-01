@@ -1,100 +1,100 @@
 .container {
-    padding: 1px;
+  padding: 1px;
 }
 
 body {
-    background-image: url('/images/e7694a96b93ca4f370f1406202aacbd2.jpg');
-    background-size: cover;
+  background-image: url('./images/e7694a96b93ca4f370f1406202aacbd2.jpg');
+  background-size: cover;
 }
 
 ._container {
-    border: 1px solid rgb(184, 169, 169);
-    margin: 10px;
-    visibility: hidden;
+  border: 1px solid rgb(184, 169, 169);
+  margin: 10px;
+  visibility: hidden;
 }
 
 ._container.active {
-    visibility: visible;
+  visibility: visible;
 }
 
 .collection :hover {
-    border: black 0.5px solid
+  border: black 0.5px solid;
 }
 
 .collection-item :hover {
-    border: none
+  border: none;
 }
 
 .BTN {
-    opacity: 0.6;
-    pointer-events: none;
-    margin: 20px;
+  opacity: 0.6;
+  pointer-events: none;
+  margin: 20px;
 }
 
 .BTN.active {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .footer button {
-    opacity: 0.6;
-    pointer-events: none;
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 .footer button.active {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .collection-item {
-    cursor: move;
-    overflow-x: scroll;
+  cursor: move;
+  overflow-x: scroll;
 }
 
 .collection-item.dragging {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 #todo {
-    border: 1px solid rgb(184, 169, 169);
+  border: 1px solid rgb(184, 169, 169);
 }
 
 #todo:hover {
-    border: black 0.5px solid
+  border: black 0.5px solid;
 }
 
 #Analysis {
-    border: 1px solid rgb(184, 169, 169);
+  border: 1px solid rgb(184, 169, 169);
 }
 
 #Analysis:hover {
-    border: black 0.5px solid
+  border: black 0.5px solid;
 }
 
 #Development {
-    border: 1px solid rgb(184, 169, 169);
+  border: 1px solid rgb(184, 169, 169);
 }
 
 #Development:hover {
-    border: black 0.5px solid
+  border: black 0.5px solid;
 }
 
 #Testing {
-    border: 1px solid rgb(184, 169, 169);
+  border: 1px solid rgb(184, 169, 169);
 }
 
 #Testing:hover {
-    border: black 0.5px solid
+  border: black 0.5px solid;
 }
 
 #Done {
-    border: 1px solid rgb(184, 169, 169);
+  border: 1px solid rgb(184, 169, 169);
 }
 
 #Done:hover {
-    border: black 0.5px solid
+  border: black 0.5px solid;
 }
 
 #inputValue {
-    color: black;
+  color: black;
 }

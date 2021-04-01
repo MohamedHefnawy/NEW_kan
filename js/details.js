@@ -15,12 +15,11 @@ const renderDetail = async() => {
     container.innerHTML = temp;
 }
 
-
 deleteBTN.addEventListener("click", async(e) => {
     const res = await fetch('http://localhost:3000/tasks/' + id, {
         method: 'DELETE'
     })
-    window.location.replace('/index.html');
+    window.open('index.html')
 })
 
 editBtn.addEventListener('click', async(e) => {
@@ -29,7 +28,6 @@ editBtn.addEventListener('click', async(e) => {
     let TaskNAME = post.taskName;
     // console.log(TaskNAME);
     detail_input.value = TaskNAME;
-
 })
 
 Save.addEventListener('click', async(e) => {
@@ -42,12 +40,8 @@ Save.addEventListener('click', async(e) => {
             taskName: detail_input.value
         })
     })
-
     .then(res => res.json())
-        //.then(() => Location.reload());
-    window.location.replace('/index.html');
-
-
+    window.open('index.html')
 })
 
 window.addEventListener('DOMContentLoaded', () => renderDetail());

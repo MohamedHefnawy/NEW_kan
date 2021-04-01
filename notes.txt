@@ -1,0 +1,20 @@
+What is handled:
+1- Imports of css and js files.
+2- Refreshing when submit a new task even when using e.preventDefault()
+That was because you shouldn't open the index.html with live server, you should open it like normal html page by just clicking on it.
+3- Drag and drop the tasks.
+4- Refactor some of the code.
+
+What is next:
+1- When adding a new task it must immediately be shown in the kanban board without refreshing.
+2- When creting a new task there is duplication of all existing tasks, this duplication must be fixed.
+3- Updating the task position when dragging and dropping it.
+4- Full crud of the title as it must be saved in the json file like the tasks.
+5- The ability to clear all the tasks and remove the kanban with its title and return to the welcoming page.
+6- Proper handling of the errors.
+7- Increase the width of the task in all columns.
+8- Welcoming page and the kanban board(even if it's with if statement).
+9- Add only the necessary comments with refactoring the code(keep it clean).
+10- Add README.md file of what is this app for, the requirements and the steps to run it.
+11- Put all the code in a folder with your GitHub username and make a PR to the parent repo.
+12- No two html files, there will be redirecting and refreshing and that is not the task for, instead use modals as alternative way for showing the task details.
